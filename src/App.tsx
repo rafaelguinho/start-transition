@@ -18,12 +18,12 @@ function App() {
 
   const filteredProducts = filterProducts(filterTerm);
 
-  function updateFilterHandler(event: any) {
-    startTransition(() => {
-      setFilterTerm(event.target.value);
-    });
+  async function updateFilterHandler(event: any) {
+    // startTransition(() => {
+    //   setFilterTerm(event.target.value);
+    // });
 
-    //setFilterTerm(event.target.value);
+    setFilterTerm(event.target.value);
   }
 
   return (

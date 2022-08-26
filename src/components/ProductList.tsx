@@ -1,7 +1,7 @@
-function ProductList({ products }) {
+function ProductList({ products }: any) {
     return (
       <ul>
-        {products.map((product) => (
+        {products.map((product: any) => (
           <li>{product}</li>
         ))}
       </ul>
