@@ -19,11 +19,11 @@ function App() {
   const filteredProducts = filterProducts(filterTerm);
 
   async function updateFilterHandler(event: any) {
-    // startTransition(() => {
-    //   setFilterTerm(event.target.value);
-    // });
+    startTransition(() => {
+      setFilterTerm(event.target.value);
+    });
 
-    setFilterTerm(event.target.value);
+    //setFilterTerm(event.target.value);
   }
 
   return (
